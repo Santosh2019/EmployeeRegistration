@@ -1,9 +1,15 @@
 package com.Google;
 
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotEmpty;
+
 public class Employee {
 
+	
 	private String firstName;
 	private String lastName;
+	@NotEmpty
+	@Email
 	private String emailId;
 	
 	public Employee() {
